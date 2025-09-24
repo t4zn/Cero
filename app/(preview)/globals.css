@@ -65,4 +65,15 @@
     body {
         @apply bg-background text-foreground;
     }
+    ::selection {
+        background-color: hsl(var(--primary) / 0.18);
+        color: hsl(var(--primary-foreground));
+    }
 }
+
+@layer utilities {
+    .glass {
+        @apply bg-background/60 backdrop-blur border border-border/60 shadow-sm;
+    }
+}
+
